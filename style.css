@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #494d0e;
+    color: #fff;
+    padding: 1em;
+    text-align: left;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: left;
+    padding: 1em;
+    background-color: #494d0e;
+    color: #77ff00;
+}
+
+/* Add more styles as needed */
