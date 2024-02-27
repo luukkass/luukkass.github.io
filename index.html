@@ -2,30 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Your Website Title</title>
 </head>
 <body>
-    <header>
-        <h1>Lukáš Mikšovský</h1>
-        <p>THE LONELY STONER</p>
-    </header>
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="nav">
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Welcome to my website!.</p>
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+        <h1>Hey, I'm [Your Name]</h1>
+        <p><i>A front-end web developer</i></p>
     </section>
 
-    <section>
-        <h2>My Projects</h2>
-        <!-- Add your projects here -->
+    <!-- Projects Section (You can add your projects here) -->
+    <section id="projects" class="project-section">
+        <h2 class="projects-section-header">My Projects</h2>
+        <!-- Add your project tiles here -->
+        <!-- Example: -->
+        <!-- <div class="project project-tile">
+            <img class="project-image" src="project-image.jpg" alt="Project">
+            <p class="project-title">Project Title</p>
+        </div> -->
     </section>
 
-    <footer>
-        <p>Contact me at: your.email@example.com</p>
+    <!-- Contact Section -->
+    <footer id="contact">
+        <p>Contact me at [your email or other contact info]</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
