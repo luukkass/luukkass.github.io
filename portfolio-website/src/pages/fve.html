@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FVE Dashboard</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/animations.css">
+    <script src="../assets/scripts/fve-dashboard.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container">
+        <!-- Include the navigation bar -->
+        <div id="navbar"></div>
+    </div>
+
+    <main>
+        <h1>FVE Dashboard</h1>
+        <p>Welcome to the FVE Dashboard. Here you can visualize data from your home solar power system.</p>
+        <div id="data-visualization">
+            <!-- Data visualization will be rendered here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include the footer -->
+        <div id="footer"></div>
+    </footer>
+
+    <script>
+        // Load the navbar and footer components
+        document.getElementById('navbar').innerHTML = await (await fetch('../components/navbar.html')).text();
+        document.getElementById('footer').innerHTML = await (await fetch('../components/footer.html')).text();
+    </script>
+</body>
+</html>

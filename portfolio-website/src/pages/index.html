@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/animations.css">
+    <script src="../assets/scripts/animations.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container">
+        <!-- Include Navbar -->
+        <div id="navbar"></div>
+    </div>
+
+    <!-- Animated Introduction Section -->
+    <section id="animated-intro">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work and projects!</p>
+        <button id="explore-button">Explore</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include Footer -->
+        <div id="footer"></div>
+    </footer>
+
+    <script>
+        // Load navbar and footer components
+        document.getElementById('navbar').innerHTML = await (await fetch('./components/navbar.html')).text();
+        document.getElementById('footer').innerHTML = await (await fetch('./components/footer.html')).text();
+    </script>
+</body>
+</html>
